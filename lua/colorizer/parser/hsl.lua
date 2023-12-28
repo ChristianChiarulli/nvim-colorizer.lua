@@ -20,7 +20,7 @@ function parser.hsl_function_parser(line, i, opts)
   local min_commas, min_spaces = 2, 2
   local pattern = "^"
     .. opts.prefix
-    .. "%(%s*([.%d]+)([deg]*)([turn]*)(%s?)%s*(,?)%s*(%d+)%%(%s?)%s*(,?)%s*(%d+)%%%s*(/?,?)%s*([.%d]*)([%%]?)%s*%)()"
+    .. "%(%s*([.%d]+)([deg]*)([turn]*)(%s?)%s*(,?)%s*([.%d]+)%%(%s?)%s*(,?)%s*([.%d]+)%%%s*(/?,?)%s*([.%d]*)([%%]?)%s*%)()"
 
   if opts.prefix == "hsl" then
     min_len = CSS_HSL_FN_MINIMUM_LENGTH
